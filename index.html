@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rage Network</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rage Network — central Discord systems, identity management and server infrastructure for Rage City.">
+  <meta name="theme-color" content="#05070d">
+  <title>Rage Network</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Rage Network</h1>
-    <p>Central Network System</p>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Rage Network home">
+      <span class="brand-mark">RN</span>
+      <span>
+        <strong>RAGE NETWORK</strong>
+        <small>CENTRAL SYSTEM</small>
+      </span>
+    </a>
+
+    <nav>
+      <a href="#systems">Systems</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <div class="status-pill">
+      <span class="status-dot"></span>
+      ONLINE
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">RAGE CITY // ALL DISTRICTS</p>
+        <h1>
+          <span class="red">RAGE</span>
+          <span class="blue">NETWORK</span>
+        </h1>
+        <p class="hero-text">
+          The central digital infrastructure connecting identities,
+          communications, security protocols and server systems across Rage City.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#systems">ENTER NETWORK</a>
+          <a class="btn btn-secondary" href="support.html">CONTACT SUPPORT</a>
+        </div>
+
+        <div class="metrics">
+          <div><strong>03</strong><span>CONNECTED FACTIONS</span></div>
+          <div><strong>24/7</strong><span>NETWORK UPTIME</span></div>
+          <div><strong>RN-01</strong><span>CORE PROTOCOL</span></div>
+        </div>
+      </div>
+
+      <div class="core-panel" aria-label="Rage Network core status">
+        <div class="ring ring-one"></div>
+        <div class="ring ring-two"></div>
+        <div class="ring ring-three"></div>
+
+        <div class="core-symbol">
+          <span>R</span><span>N</span>
+        </div>
+
+        <div class="panel-label top-left">IDENTITY // VERIFIED</div>
+        <div class="panel-label top-right">SECURITY // ACTIVE</div>
+        <div class="panel-label bottom-left">SIGNAL // STABLE</div>
+        <div class="panel-label bottom-right">STATUS // ONLINE</div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="System message">
+      <span>CONNECTION ESTABLISHED</span>
+      <span>•</span>
+      <span>SECURE CHANNEL ACTIVE</span>
+      <span>•</span>
+      <span>WELCOME TO RAGE NETWORK</span>
+    </section>
+
+    <section id="systems" class="systems">
+      <div class="section-heading">
+        <p class="eyebrow">CORE MODULES</p>
+        <h2>NETWORK SYSTEMS</h2>
+      </div>
+
+      <div class="card-grid">
+        <article class="system-card">
+          <span class="card-index">01</span>
+          <div class="icon">ID</div>
+          <h3>Identity Management</h3>
+          <p>Verification, access levels, faction roles and citizen identity synchronization.</p>
+        </article>
+
+        <article class="system-card">
+          <span class="card-index">02</span>
+          <div class="icon">COM</div>
+          <h3>Communications</h3>
+          <p>Automated announcements, commands, notifications and secure network messaging.</p>
+        </article>
+
+        <article class="system-card">
+          <span class="card-index">03</span>
+          <div class="icon">SEC</div>
+          <h3>Security Protocols</h3>
+          <p>Moderation systems, audit logs, account protection and incident monitoring.</p>
+        </article>
+
+        <article class="system-card">
+          <span class="card-index">04</span>
+          <div class="icon">SYS</div>
+          <h3>Server Integration</h3>
+          <p>Infrastructure designed for Discord, FiveM and future Rage Devs services.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="factions">
+      <div class="section-heading">
+        <p class="eyebrow">CITY ACCESS</p>
+        <h2>ALL FACTIONS. ONE NETWORK.</h2>
+      </div>
+
+      <div class="faction-line">
+        <span>NOMADS</span>
+        <span>DISTRICT ZERO</span>
+        <span>ONITECH</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>RAGE NETWORK</strong>
+      <p>Connected. Secure. Unstoppable.</p>
+    </div>
+    <div class="footer-links">
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Rage Devs</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
